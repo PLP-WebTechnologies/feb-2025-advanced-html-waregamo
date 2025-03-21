@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact and Registration Page</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Contact and Registration Page</h1>
+    </header>
+
+    <!-- Ordered List with Roman Numerals -->
+    <section id="steps">
+        <h2>Steps to Register</h2>
+        <ol type="I">
+            <li>Fill out the registration form.</li>
+            <li>Submit the form.</li>
+            <li>Check your email for confirmation.</li>
+        </ol>
+    </section>
+
+    <!-- External Image -->
+    <section id="image">
+        <h2>External Image</h2>
+        <img src="https://images.pexels.com/photos/1234567/pexels-photo-1234567.jpeg" alt="Image from Pexels" width="200">
+    </section>
+
+    <!-- Contacts Table -->
+    <section id="contacts">
+        <h2>Contacts</h2>
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Mwangi</td>
+                <td>123 Main St, Nairobi</td>
+                <td>+254 712 345678</td>
+                <td>mwangi@example.com</td>
+            </tr>
+            <tr>
+                <td>Praise</td>
+                <td>456 Elm St, Mombasa</td>
+                <td>+254 723 456789</td>
+                <td>praise@example.com</td>
+            </tr>
+            <tr>
+                <td>Lilian</td>
+                <td>789 Maple St, Kisumu</td>
+                <td>+254 734 567890</td>
+                <td>lilian@example.com</td>
+            </tr>
+            <tr>
+                <td>Alvin</td>
+                <td>321 Oak St, Nakuru</td>
+                <td>+254 745 678901</td>
+                <td>alvin@example.com</td>
+            </tr>
+            <tr>
+                <td>Mumbe</td>
+                <td>654 Pine St, Eldoret</td>
+                <td>+254 756 789012</td>
+                <td>mumbe@example.com</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section id="registration">
+        <h2>Registration Form</h2>
+        <form id="registrationForm" novalidate>
+            
+            <!-- Name Field -->
+            <label for="name">Name <span style="color:red;">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <!-- Email Field -->
+            <label for="email">Email <span style="color:red;">*</span></label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <!-- Password Field -->
+            <label for="password">Password <span style="color:red;">*</span></label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6">
+
+            <!-- Date Field -->
+            <label for="dob">Date of Birth <span style="color:red;">*</span></label>
+            <input type="date" id="dob" name="dob" required>
+
+            <!-- Dropdown for Country -->
+            <label for="country">Country <span style="color:red;">*</span></label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="kenya">Kenya</option>
+                <option value="usa">Tanzania</option>
+                <option value="canada">South Africa</option>
+                <option value="uk">Nigeria</option>
+            </select>
+
+            <!-- Radio Buttons for Gender -->
+            <fieldset>
+                <legend>Gender <span style="color:red;">*</span></legend>
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female" required> Female</label>
+            </fieldset>
+
+            <!-- Checkboxes for Interests -->
+            <fieldset>
+                <legend>Interests</legend>
+                <label><input type="checkbox" name="interests" value="sports"> Sports</label>
+                <label><input type="checkbox" name="interests" value="music"> Music</label>
+                <label><input type="checkbox" name="interests" value="reading"> Reading</label>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Register">
+        </form>
+    </section>
+
+    <!-- Multimedia Section -->
+    <section id="multimedia">
+        <h2>Multimedia</h2>
+        
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            My browser does not support the audio element i used external link from soundhelix
+        </audio>
+        
+        <video controls width="400">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            my browser does not support the video element so i used external from w3schools
+        </video>
+    </section>
+    
+    <footer>
+        <p>&copy; Feb 2025 Cohort</p>
+    </footer>
+
+</body>
+</html>
+
